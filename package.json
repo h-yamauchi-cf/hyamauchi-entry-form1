@@ -5,11 +5,11 @@
   "author": "Hayato Yamauchi <yamauchi@r3it.com>",
   "license": "MIT",
   "scripts": {
-    "dev": ". ./env.sh && nuxt",
-    "build": "yarn install && . ./env.sh && nuxt build",
-    "start": ". ./env.sh && nuxt start",
-    "generate": ". ./env.sh && nuxt generate",
-    "cf": ". ./env.sh && nuxt generate && wrangler pages publish dist --project-name hyamauchi-entry-form1-by-wrangler-cli",
+    "dev": "nuxt",
+    "build": "yarn install && nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "cf": "nuxt generate && wrangler pages publish dist --project-name hyamauchi-entry-form1-by-wrangler-cli",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },

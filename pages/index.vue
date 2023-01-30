@@ -4,12 +4,16 @@
     <v-form>
       <v-container>
         <v-row>
-          <v-col
-            cols="12"
-          >
+          <v-col cols="6">
             <v-text-field
               v-model="name"
-              label="Name"
+              label="姓"
+            ></v-text-field>
+          </v-col>
+          <v-col cols="6">
+            <v-text-field
+              v-model="name"
+              label="名"
             ></v-text-field>
           </v-col>
           </v-row>
