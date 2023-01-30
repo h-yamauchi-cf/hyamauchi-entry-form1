@@ -1,0 +1,31 @@
+{
+  "name": "hyamauchi-entry-form1",
+  "version": "1.0.0",
+  "description": "hyamauchi-entry-form1",
+  "author": "Hayato Yamauchi <yamauchi@r3it.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": ". ./env.sh && nuxt",
+    "build": "yarn install && . ./env.sh && nuxt build",
+    "start": ". ./env.sh && nuxt start",
+    "generate": ". ./env.sh && nuxt generate",
+    "cf": ". ./env.sh && nuxt generate && wrangler pages publish dist --project-name hyamauchi-entry-form1-by-wrangler-cli",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@mdi/js": "^5.9.55",
+    "@nuxtjs/vuetify": "^1.11.3",
+    "axios": "^0.27.2",
+    "dayjs": "^1.10.4",
+    "howler": "^2.2.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^7.32.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-vue": "^9.2.0"
+  }
+}
